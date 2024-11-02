@@ -19,3 +19,39 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.affect-1 {
+  animation: change-effect-1 3s linear infinite alternate;
+}
+
+@keyframes change-effect-1 {
+  0% {
+    background-image: linear-gradient(to top right, #9089fc, #ff80b5);
+    rotate: 50deg;
+  }
+  30% {
+    background-image: linear-gradient(to top right, #7f3aee, #c05fbb);
+  }
+  100% {
+    background-image: linear-gradient(to top right, #ff80b5, #9089fc);
+    rotate: 70deg;
+  }
+}
+.affect-2 {
+  animation: change-effect-2 4s linear infinite alternate 0.5s;
+}
+
+@keyframes change-effect-2 {
+  0% {
+    background-image: linear-gradient(to top right, #9089fc, #ff80b5);
+    rotate: -90deg;
+    translate: -90px;
+  }
+  30% {
+    background-image: linear-gradient(to top right, #7f3aee, #c05fbb);
+  }
+  100% {
+    background-image: linear-gradient(to top right, #ff80b5, #9089fc);
+    rotate: 0deg;
+    translate: 0px;
+  }
+}
