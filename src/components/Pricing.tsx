@@ -75,8 +75,8 @@ export default function Pricing() {
             key={tier.id}
             className={classNames(
               tier.featured
-                ? "relative bg-gray-800 shadow-2xl"
-                : "relative bg-gray-800 sm:mx-8 lg:mx-0",
+                ? "relative bg-stone-800/25 shadow-2xl"
+                : "relative bg-stone-800/25 sm:mx-8 lg:mx-0",
               tier.featured
                 ? ""
                 : tierIdx === 0
